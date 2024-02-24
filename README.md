@@ -30,30 +30,7 @@ Currently SharpGPOAbuse supports the following options:
 ```
 Options required to add new user rights:
 --UserRights
-        Set the new rights to add to a user. This option is case sensitive and a comma separeted list must be used.
---UserAccount
-        Set the account to add the new rights.
---GPOName
-        The name of the vulnerable GPO.
-        
-Example:
-        SharpGPOAbuse.exe --AddUserRights --UserRights "SeTakeOwnershipPrivilege,SeRemoteInteractiveLogonRight" --UserAccount bob.smith --GPOName "Vulnerable GPO"
-```
 
-### Adding a Local Admin 
-```
-Options required to add a new local admin:
---UserAccount
-        Set the name of the account to be added in local admins.
---GPOName
-        The name of the vulnerable GPO.
-
-Example:
-        SharpGPOAbuse.exe --AddLocalAdmin --UserAccount bob.smith --GPOName "Vulnerable GPO"
-```
-
-### Configuring a User or Computer Logon Script  
-```
 Options required to add a new user or computer startup script:
 --ScriptName
         Set the name of the new startup script.
